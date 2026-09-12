@@ -1,0 +1,8 @@
+# Bundle patch of dsh-local-no-auth: inserted by dsh-app-boot through the
+# `dsh.bundle.patch` manifest field, after every bundle layer and before the
+# profile's user patch layer (cordis.patch.yml). A top-level `insert` with no
+# id appends the row to the root entry list; the relative `name` is rewritten
+# to a file:// URL anchored on this file's directory.
+- insert:
+    - id: local-no-auth
+      name: ./lib/index.js
