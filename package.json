@@ -1,6 +1,6 @@
 {
   "name": "dsh-local-no-auth",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "DSH plugin: skip the per-restart ?token= browser gate for loopback-only Web GUI deployments. Prints and opens a clean URL, serves / and /api without a token — but ONLY while the webserver is bound to 127.0.0.1 AND the request's Host header is a loopback name; anything else falls back to the stock token/cookie authentication. The connection Host/Origin fence (isTrustedApiRequest) is left untouched.",
   "keywords": [
     "dsh",
